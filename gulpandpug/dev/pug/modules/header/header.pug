@@ -1,0 +1,32 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+mixin headerNavLink(link,text)
+    li.header-nav__item
+        a(href=link).header-nav__link= text
+
+header.header
+    section(style="background-image:url('static/images/general/background.jpg')").s-banner
+        .container
+            .header__top
+                .logo
+                    img(src="static/images/general/str.png").header__img
+                .header__nav.header-nav--left.header-nav
+                    h1.header-nav__lin tajam
+                nav.header__nav.header__nav--right.header-nav
+                    ul.header-nav__list
+                        a(href="").header-nav__li HOME
+                        +headerNavLink('','ABOUT')
+                        +headerNavLink('','EXPERTISE')
+                        +headerNavLink('','TEAMS')
+                        +headerNavLink('','WORKS')
+                        +headerNavLink('','PEOPLE SAY')
+                        +headerNavLink('','CONTACT')
+            .banner
+                h1.title-page   We Are Awesome Creative Agency
+                .separator
+                    img(src="static/images/general/Separator.jpg").separator
+                p.banner__text  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Dues sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                button.banner-nav__bottom LEARN MORE
